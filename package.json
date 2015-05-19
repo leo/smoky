@@ -1,0 +1,28 @@
+{
+	"name": "smoky",
+	"version": "1.0.0",
+	"description": "A new, modern lightbox written in ES6.",
+	"main": "index.js",
+	  
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leo/smoky.git"
+	},
+	  
+	"keywords": [
+		"smoky",
+		"lightbox",
+		"smokey",
+		"smokie",
+		"es6"
+	],
+	  
+	"author": "Leonard Lamprecht",
+	"license": "MIT",
+	
+	"bugs": {
+		"url": "https://github.com/leo/smoky/issues"
+	},
+	
+	"homepage": "https://github.com/leo/smoky#readme"
+}
