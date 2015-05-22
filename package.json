@@ -2,7 +2,7 @@
 	"name": "smoky",
 	"version": "1.0.0",
 	"description": "A new, modern lightbox written in ES6.",
-	"main": "index.js",
+	"main": "src/index.js",
 	  
 	"repository": {
 		"type": "git",
