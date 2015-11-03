@@ -1,0 +1,130 @@
+.smoky {
+	all: unset;
+	position: fixed;
+	background: rgba( 0, 0, 0, 0.8 );
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 0.4s, opacity 0.4s linear;
+	padding: 20px;
+	z-index: 5000;
+}
+
+.smoky img {
+	display: inherit;
+	max-height: 100%;
+	max-width: 100%;
+	border-radius: 5px;
+	border: 5px solid #fff;
+	box-sizing: border-box;
+	width: auto;
+	height: auto;
+}
+
+.smoky figure {
+	opacity: 0;
+	z-index: 5200;
+}
+
+.smoky figcaption {
+	color: #fff;
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	display: block;
+	padding: 20px 60px;
+	letter-spacing: 0.03em;
+	opacity: 0.1;
+	cursor: default;
+}
+
+.smoky figcaption:hover {
+	opacity: 1;
+}
+
+.smoky section {
+	opacity: 1;
+	z-index: 5100;
+	transition: opacity 0.5s;
+}
+
+.smoky figure,
+.smoky figcaption {
+	transition: opacity 0.4s;
+}
+
+.smoky span {
+	height: 60px;
+	text-align: center;
+	font-size: 10px;
+	display: block;
+}
+
+.smoky span:nth-child( 2 ) {
+	animation-delay: -1.1s;
+}
+
+.smoky span:nth-child( 3 ) {
+	animation-delay: -1s;
+}
+
+.smoky span:nth-child( 4 ) {
+	animation-delay: -0.9s;
+}
+
+.smoky span:nth-child( 5 ) {
+	animation-delay: -0.8s;
+}
+
+.smoky span b {
+	background: #fff;
+	height: inherit;
+	width: 7px;
+	display: inline-block;
+	margin: 0 3px 0 0;
+	animation: stretch 1.2s infinite ease-in-out;
+}
+
+.smoky > * {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+}
+
+.smoky.open {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.4s linear;
+}
+
+.smoky.loaded figure {
+	transition: opacity 3s;
+	opacity: 1;
+}
+
+.smoky.loaded section {
+	opacity: 0;
+}
+
+@keyframes stretch {
+
+	0%, 40%, 100% {
+		-webkit-transform: scaleY( 0.4 );
+		transform: scaleY( 0.4 );
+	}
+
+	20% {
+		-webkit-transform: scaleY( 1 );
+		transform: scaleY( 1 );
+	}
+
+}
