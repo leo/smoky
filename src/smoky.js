@@ -16,7 +16,7 @@ class Smoky {
 
 		this.items = [].slice.call( document.querySelectorAll( select ) )
 
-		for( let i = 0; i < this.items.length; i++ ) {
+		for( var i = 0; i < this.items.length; i++ ) {
 
 			this.items[i].addEventListener(
 				'click',
@@ -46,7 +46,7 @@ class Smoky {
 
 		if( target.hasAttribute( 'title' ) ) {
 
-			let title = document.createElement( 'figcaption' )
+			var title = document.createElement( 'figcaption' )
 			title.innerHTML = target.title
 
 			this.figure.appendChild( title )
@@ -63,10 +63,10 @@ class Smoky {
 
 	getPosition( ele ) {
 
-		let group = this.items,
+		var group = this.items,
 			i = 0
 
-		for( let sibling in group ) {
+		for( var sibling in group ) {
 
 			if( group[sibling].nodeType && group[sibling] == ele ) {
 
@@ -85,7 +85,7 @@ class Smoky {
 
 	seekElement( event ) {
 
-		let figure = this.figure,
+		var figure = this.figure,
 			target = event.currentTarget
 
 		this.current = this.getPosition( target )
@@ -102,7 +102,7 @@ class Smoky {
 
 		var actions = {
 			load: this.addImage( preload, target ),
-			click: event => event.stopPropagation()
+			click: event.stopPropagation()
 		}
 
 		this.setEvents( preload, actions )
@@ -122,7 +122,7 @@ class Smoky {
 
 	move( direction ) {
 
-		let move = this.items[this.current + direction].href;
+		var move = this.items[this.current + direction].href;
 
 		this.figure.firstChild.src = move;
 
@@ -149,7 +149,7 @@ class Smoky {
 				var mother = key ? this.aside : document.body
 			}
 
-			for( let i = 0; i < ( mother == this.span ? 4 : 1 ); i++ ) {
+			for( var i = 0; i < ( mother == this.span ? 4 : 1 ); i++ ) {
 
 				this[tag] = mother.appendChild(
 					document.createElement( tag )
@@ -165,7 +165,7 @@ class Smoky {
 
 	clearBox() {
 
-		let fig = this.figure
+		var fig = this.figure
 
 		while( fig.firstChild ) {
 			fig.removeChild( fig.firstChild )
@@ -202,7 +202,7 @@ class Smoky {
 
 	addClass( who, title ) {
 
-		let attr = who.className;
+		var attr = who.className;
 		who.className = attr ? attr + ' ' + title : title
 
 	}
