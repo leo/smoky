@@ -16,63 +16,63 @@ Give it a spin and you'll be convinced fastly!
 
 1. After you've set up and compiled the source and implemented both the CSS and the JS parts of smoky, give it a try:
 
-	```js
-	new Smoky( 'a.lightbox' );
-	```
-  
+  ```js
+  new Smoky( 'a.lightbox' );
+  ```
+
 2. Now every click on an element that matches the selector will be captured by smoky and trigger the opening of the lightbox containing the child image of the link element. If you want to make some additional configuration, just overwrite the existing one:
 
-	```js
-	new Smoky( 'a.lightbox', {
-		option: value
-	});
-	```
+  ```js
+  new Smoky( 'a.lightbox', {
+    option: value
+  });
+  ```
 
 ## Options
 
 <table>
-	<tr>
-		<td>escKey</td>
-		<td>If the visitor can use the escape key to close the lightbox window after opening it.</td>
-		<td>true</td>
-	</tr>
-	<tr>
-		<td>arrowKeys</td>
-		<td>Whether the user can use the arrow keys on his keyboard to move to the next or previous image within a gallery.</td>
-		<td>true</td>
-	</tr>
-	<tr>
-		<td>className</td>
-		<td>The class that will be used for every interaction with the DOM.</td>
-		<td>'smoky'</td>
-	</tr>
-	<tr>
-		<td>cache</td>
-		<td>Allow smoky to preload the next images within a gallery.</td>
-		<td>true</td>
-	</tr>
-	<tr>
-		<td>caption</td>
-		<td>The name of the attribute of the link element that will be used to display the image caption.</td>
-		<td>'title'</td>
-	</tr>
+  <tr>
+    <td>escKey</td>
+    <td>If the visitor can use the escape key to close the lightbox window after opening it.</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>arrowKeys</td>
+    <td>Whether the user can use the arrow keys on his keyboard to move to the next or previous image within a gallery.</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>className</td>
+    <td>The class that will be used for every interaction with the DOM.</td>
+    <td>'smoky'</td>
+  </tr>
+  <tr>
+    <td>cache</td>
+    <td>Allow smoky to preload the next images within a gallery.</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>caption</td>
+    <td>The name of the attribute of the link element that will be used to display the image caption.</td>
+    <td>'title'</td>
+  </tr>
 </table>
 
 ## Methods
 
 <table>
-	<tr>
-		<td>.move()</td>
-		<td>Change the image to a different one within a gallery. For example, '-1' will move to the previous and '+1' to the next one.</td>
-	</tr>
-	<tr>
-		<td>.shut()</td>
-		<td>Close the lightbox window if it's already shown.</td>
-	</tr>
-	<tr>
-		<td>.isOpened()</td>
-		<td>Will return *true* if the lightbox is open.</td>
-	</tr>
+  <tr>
+    <td>.move()</td>
+    <td>Change the image to a different one within a gallery. For example, '-1' will move to the previous and '+1' to the next one.</td>
+  </tr>
+  <tr>
+    <td>.shut()</td>
+    <td>Close the lightbox window if it's already shown.</td>
+  </tr>
+  <tr>
+    <td>.isOpened()</td>
+    <td>Will return *true* if the lightbox is open.</td>
+  </tr>
 </table>
 
 If you've found any bugs or have some feedback for me, make sure to [open an issue][4]!
