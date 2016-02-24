@@ -4,7 +4,7 @@ As a webdeveloper, you've certainly already made a website that contained a ligh
 
 ## Why?
 
-- There are plenty of lightbox scripts out there, we both know that. But smoky is not an alternative to them. It's completely written in vanilly JS (ES 6) and the latest web technologies.
+- There are plenty of lightbox scripts out there, we both know that. But smoky is not an alternative to them. It's completely written in vanilla JS (ES 6) and the latest web technologies.
 
 - Most of the scripts use JS to animate, smoky does not. It uses GPU-powered CSS animations (they're much faster and don't insert arkward number-chains into your code).
 
@@ -30,50 +30,21 @@ Give it a spin and you'll be convinced fastly!
 
 ## Options
 
-<table>
-  <tr>
-    <td>escKey</td>
-    <td>If the visitor can use the escape key to close the lightbox window after opening it.</td>
-    <td>true</td>
-  </tr>
-  <tr>
-    <td>arrowKeys</td>
-    <td>Whether the user can use the arrow keys on his keyboard to move to the next or previous image within a gallery.</td>
-    <td>true</td>
-  </tr>
-  <tr>
-    <td>className</td>
-    <td>The class that will be used for every interaction with the DOM.</td>
-    <td>'smoky'</td>
-  </tr>
-  <tr>
-    <td>cache</td>
-    <td>Allow smoky to preload the next images within a gallery.</td>
-    <td>true</td>
-  </tr>
-  <tr>
-    <td>caption</td>
-    <td>The name of the attribute of the link element that will be used to display the image caption.</td>
-    <td>'title'</td>
-  </tr>
-</table>
+| Name      | Description                                                                                                     | Default&nbsp;value |
+| --------- | --------------------------------------------------------------------------------------------------------------- | ------------- |
+| escKey    | If the visitor can use the escape key to close the lightbox window after opening it.                            | true          |
+| arrowKeys | Whether the user can use the arrow keys on his keyboard to move to the next or previous image within a gallery. | true          |
+| className | The class that will be used for every interaction with the DOM.                                                 | 'smoky'       |
+| cache     | Allow smoky to preload the next images within a gallery.                                                        | true          |
+| caption   | The name of the attribute of the link element that will be used to display the image caption.                   | 'title'       |
 
 ## Methods
 
-<table>
-  <tr>
-    <td>.move()</td>
-    <td>Change the image to a different one within a gallery. For example, '-1' will move to the previous and '+1' to the next one.</td>
-  </tr>
-  <tr>
-    <td>.shut()</td>
-    <td>Close the lightbox window if it's already shown.</td>
-  </tr>
-  <tr>
-    <td>.isOpened()</td>
-    <td>Will return *true* if the lightbox is open.</td>
-  </tr>
-</table>
+| Name        | Description                                                                                                                 |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------- |
+| .move()     | Change the image to a different one within a gallery. For example, '-1' will move to the previous and '+1' to the next one. |
+| .shut()     | Close the lightbox window if it's already shown.                                                                            |
+| .isOpened() | Will return *true* if the lightbox is open.                                                                                 |
 
 If you've found any bugs or have some feedback for me, make sure to [open an issue][4]!
 
