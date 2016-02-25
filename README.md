@@ -2,6 +2,10 @@
 
 As a webdeveloper, you've certainly already made a website that contained a lightbox. The concept itself comes from Lokesh Dhakar, who created the original [lightbox script][1] many years ago (which is now written as a jQuery plugin).
 
+```bash
+npm install smoky --save-dev
+```
+
 ## Why?
 
 - There are plenty of lightbox scripts out there, we both know that. But smoky is not an alternative to them. It's completely written in vanilla JS (ES 6) and the latest web technologies.
