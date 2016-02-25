@@ -1,9 +1,0 @@
-# Node.js
-
-npm-debug.log
-node_modules
-
-# Sass
-
-*.css.map
-.sass-cache
