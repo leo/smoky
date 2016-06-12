@@ -13,7 +13,11 @@
     "smokie",
     "es6"
   ],
-  "author": "Leonard Lamprecht <mindrun@icloud.com> (http://leo.im)",
+  "author": {
+    "name": "Leo Lamprecht",
+    "email": "mindrun@icloud.com",
+    "url": "http://leo.im"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/leo/smoky/issues"
