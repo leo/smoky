@@ -10,7 +10,7 @@ npm install smoky --save-dev
 
 - There are plenty of lightbox scripts out there, we both know that. But smoky is not an alternative to them. It's completely written in vanilla JS (ES 6) and the latest web technologies.
 
-- Most of the scripts use JS to animate, smoky does not. It uses GPU-powered CSS animations (they're much faster and don't insert arkward number-chains into your code).
+- Most of the scripts use JS to animate, smoky does not. It uses GPU-powered CSS animations (they're much faster and don't insert awkward number-chains into your code).
 
 ## Sounds interesting?
 
